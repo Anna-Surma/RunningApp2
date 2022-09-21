@@ -6,15 +6,16 @@ import com.example.runningapp2.database.RunDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 object AppModule {
-    @Singleton
+
     @Provides
+    @Singleton
     fun provideRunningDatabase(
         @ApplicationContext app: Context
     ) = Room.databaseBuilder(
@@ -26,4 +27,10 @@ object AppModule {
     @Singleton
     @Provides
     fun provideRunDao(db: RunDatabase) = db.getRunDao()
+
+//    @Provides
+//    @Singleton
+//    fun provideMainRepository(runDao: RunDAO): MainRepositoryImpl {
+//        return MainRepository(runDao)
+//    }
 }

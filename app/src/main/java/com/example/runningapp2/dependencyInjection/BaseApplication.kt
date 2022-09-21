@@ -1,4 +1,4 @@
-package com.example.runningapp2
+package com.example.runningapp2.dependencyInjection
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
