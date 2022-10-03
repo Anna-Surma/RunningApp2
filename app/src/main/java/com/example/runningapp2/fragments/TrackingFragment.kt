@@ -15,6 +15,7 @@ class TrackingFragment : Fragment() {
 
     private val viewModel: MainViewModel by viewModels()
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
