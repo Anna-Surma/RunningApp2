@@ -7,8 +7,7 @@
         <item>Average Speed</item>
         <item>Calories Burned</item>
     </string-array>
-    <string name="google_maps_key">AIzaSyBkFAffAxNCyPWvKbgeW5cdHDL7JWZgfIs</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="google_maps_key">AIzaSyCf79GzI_fSsKKvtIMJ5ixlmU0DZVn9wUg</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="your_runs">Your Runs</string>
     <string name="statistics">Statistics</string>
